@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>React Router Integration · DSGT Member Portal</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="[React Router](https://reacttraining.com/react-router/) is a set of navigational components that can be composed with any React application. We chose to use this for the convenience of having bookmarkable URLs within the portal (via the &quot;history&quot; prop). "/><meta name="docsearch:language" content="en"/><meta property="og:title" content="React Router Integration · DSGT Member Portal"/><meta property="og:type" content="website"/><meta property="og:url" content="https://datascience-gt.github.io/portal-docs/"/><meta property="og:description" content="[React Router](https://reacttraining.com/react-router/) is a set of navigational components that can be composed with any React application. We chose to use this for the convenience of having bookmarkable URLs within the portal (via the &quot;history&quot; prop). "/><meta property="og:image" content="https://datascience-gt.github.io/portal-docs/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://datascience-gt.github.io/portal-docs/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/portal-docs/img/icon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://datascience-gt.github.io/portal-docs/blog/atom.xml" title="DSGT Member Portal Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://datascience-gt.github.io/portal-docs/blog/feed.xml" title="DSGT Member Portal Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/portal-docs/js/scrollSpy.js"></script><link rel="stylesheet" href="/portal-docs/css/main.css"/><script src="/portal-docs/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/portal-docs/"><img class="logo" src="/portal-docs/img/icon-dark-min.png" alt="DSGT Member Portal"/><h2 class="headerTitleWithLogo">DSGT Member Portal</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/portal-docs/docs/doc1" target="_self">Docs</a></li><li class="siteNavGroupActive"><a href="/portal-docs/docs/doc1" target="_self">API</a></li><li class=""><a href="/portal-docs/help" target="_self">Help</a></li><li class=""><a href="/portal-docs/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Routing</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Overview</h3><ul class=""><li class="navListItem"><a class="navItem" href="/portal-docs/docs/doc1">The Purpose of the Member Portal</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/doc2">Technologies Used</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Guidelines</h3><ul class=""><li class="navListItem"><a class="navItem" href="/portal-docs/docs/guidelines/feature-dev">Developing a Feature</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/guidelines/feature-test">Testing a Feature</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/guidelines/feature-push">Pushing a Feature</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/guidelines/deployment">The Deployment Process</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Routing</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/portal-docs/docs/routing/routing">React Router Integration</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Authentication</h3><ul class=""><li class="navListItem"><a class="navItem" href="/portal-docs/docs/auth/auth">Authentication</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Outer Pages</h3><ul class=""><li class="navListItem"><a class="navItem" href="/portal-docs/docs/outer-pages/home">Home Page</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/outer-pages/login">Login Page</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/outer-pages/signup">Signup Page</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/outer-pages/sponsors">Sponsors Page</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Firebase Interface</h3><ul class=""><li class="navListItem"><a class="navItem" href="/portal-docs/docs/firebase/fbcontext">Firebase Context</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/firebase/fbuser">Firebase User</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/firebase/fbevent">Firebase Event</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/firebase/fbgroups">Firebase Groups</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Member Dashboard</h3><ul class=""><li class="navListItem"><a class="navItem" href="/portal-docs/docs/dashboard/dbhome">Dashboard Home Page</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/dashboard/dbeditprofile">Dashboard Edit Profile Page</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/dashboard/dbevents">Dashboard Events Page</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/dashboard/dbgroups">Dashboard Groups Page</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/dashboard/dbworkshops">Dashboard Workshops Page</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">React Router Integration</h1></header><article><div><span><p><a href="https://reacttraining.com/react-router/">React Router</a> is a set of navigational components that can be composed with any React application. We chose to use this for the convenience of having bookmarkable URLs within the portal (via the &quot;history&quot; prop).</p>
+<p>Declarative Routing in the application is done entirely in the App.js file, where each endpoint is paired with its corresponding component (for instance, '/login' with LoginPage). Note that the routes are all defined under the 'config/routes.js' file, which is then imported on demand. It allows us to maintain a single point of configuration that ensures that only a single string needs to be modified in order to be reflected within the entire application.</p>
+<pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">Router</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Navigation</span>/&gt;</span> 
+    <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">exact</span> <span class="hljs-attr">path</span>=<span class="hljs-string">{ROUTES.LANDING}</span> <span class="hljs-attr">component</span>=<span class="hljs-string">{HomePage}</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">{ROUTES.SPONSORS}</span> <span class="hljs-attr">component</span>=<span class="hljs-string">{SponsorsPage}</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">{ROUTES.LOGIN}</span> <span class="hljs-attr">component</span>=<span class="hljs-string">{LoginPage}</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">{ROUTES.SIGNUP}</span> <span class="hljs-attr">component</span>=<span class="hljs-string">{SignUpPage}</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">{ROUTES.DASHBOARD_HOME}</span> <span class="hljs-attr">component</span>=<span class="hljs-string">{Dashboard}</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">{ROUTES.DASHBORD_EDIT_PROFILE}</span> <span class="hljs-attr">component</span>=<span class="hljs-string">{DashboardEditProfilePage}/</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">{ROUTES.DASHBOARD_EVENT}</span> <span class="hljs-attr">component</span>=<span class="hljs-string">{DashboardEventPage}/</span>&gt;</span>                
+    <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">{ROUTES.DASHBOARD_GROUP}</span> <span class="hljs-attr">component</span>=<span class="hljs-string">{DashboardGroupPage}</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">Router</span>&gt;</span> 
+</code></pre>
+<p>This is currently what <code>App.js</code> is comprised of. Notice that we include the Navigation component (which will be visited later) within the parent component to avoid redundancy in declaring it.</p>
+<h3><a class="anchor" aria-hidden="true" id="adding-a-new-route"></a><a href="#adding-a-new-route" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Adding a new route</h3>
+<p>Assume that we want a new Dashboard Workshops Page in the portal.</p>
+<ol>
+<li>We start by defining the route in the <code>routes.js</code> file:</li>
+</ol>
+<pre><code class="hljs"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> DASHBOARD_WORKSHOPS = <span class="hljs-string">'/dashboard/workshops'</span>;
+</code></pre>
+<ol start="2">
+<li>Import the desired component into the <code>App.js</code> file:</li>
+</ol>
+<pre><code class="hljs"><span class="hljs-keyword">import</span> DashboardWorkshopsPage <span class="hljs-keyword">from</span> <span class="hljs-string">'../Dashboard/Common/Workshops Page'</span>;
+</code></pre>
+<ol start="3">
+<li>Finally, we add a new <code>&lt;Route /&gt;</code> component in the <code>App.js</code> file:</li>
+</ol>
+<pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">{ROUTES.DASHBOARD_WORKSHOPS}</span> <span class="hljs-attr">component</span>=<span class="hljs-string">{DashboardWorkshopsPage}</span> /&gt;</span>
+</code></pre>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/portal-docs/docs/guidelines/deployment"><span class="arrow-prev">← </span><span>The Deployment Process</span></a><a class="docs-next button" href="/portal-docs/docs/auth/auth"><span>Authentication</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/portal-docs/" class="nav-home"><img src="/portal-docs/img/icon.png" alt="DSGT Member Portal" width="66" height="58"/></a><div><h5>Docs</h5></div><div><h5>Community</h5><a href="/portal-docs/en/users.html">User Showcase</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/portal-docs/blog">Blog</a><a href="https://github.com/DataScience-GT/datascience-gt.github.io" target="_blank">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/portal-docs/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2020 Data Science @ GT</section></footer></div></body></html>

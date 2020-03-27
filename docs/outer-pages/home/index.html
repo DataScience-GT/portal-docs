@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>The Home Page · DSGT Member Portal</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="Sample"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="The Home Page · DSGT Member Portal"/><meta property="og:type" content="website"/><meta property="og:url" content="https://datascience-gt.github.io/portal-docs/"/><meta property="og:description" content="Sample"/><meta property="og:image" content="https://datascience-gt.github.io/portal-docs/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://datascience-gt.github.io/portal-docs/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/portal-docs/img/icon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://datascience-gt.github.io/portal-docs/blog/atom.xml" title="DSGT Member Portal Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://datascience-gt.github.io/portal-docs/blog/feed.xml" title="DSGT Member Portal Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/portal-docs/js/scrollSpy.js"></script><link rel="stylesheet" href="/portal-docs/css/main.css"/><script src="/portal-docs/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/portal-docs/"><img class="logo" src="/portal-docs/img/icon-dark-min.png" alt="DSGT Member Portal"/><h2 class="headerTitleWithLogo">DSGT Member Portal</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/portal-docs/docs/doc1" target="_self">Docs</a></li><li class="siteNavGroupActive"><a href="/portal-docs/docs/doc1" target="_self">API</a></li><li class=""><a href="/portal-docs/help" target="_self">Help</a></li><li class=""><a href="/portal-docs/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Outer Pages</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Overview</h3><ul class=""><li class="navListItem"><a class="navItem" href="/portal-docs/docs/doc1">The Purpose of the Member Portal</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/doc2">Technologies Used</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Guidelines</h3><ul class=""><li class="navListItem"><a class="navItem" href="/portal-docs/docs/guidelines/feature-dev">Developing a Feature</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/guidelines/feature-test">Testing a Feature</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/guidelines/feature-push">Pushing a Feature</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/guidelines/deployment">The Deployment Process</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Routing</h3><ul class=""><li class="navListItem"><a class="navItem" href="/portal-docs/docs/routing/routing">React Router Integration</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Authentication</h3><ul class=""><li class="navListItem"><a class="navItem" href="/portal-docs/docs/auth/auth">Authentication</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Outer Pages</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/portal-docs/docs/outer-pages/home">Home Page</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/outer-pages/login">Login Page</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/outer-pages/signup">Signup Page</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/outer-pages/sponsors">Sponsors Page</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Firebase Interface</h3><ul class=""><li class="navListItem"><a class="navItem" href="/portal-docs/docs/firebase/fbcontext">Firebase Context</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/firebase/fbuser">Firebase User</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/firebase/fbevent">Firebase Event</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/firebase/fbgroups">Firebase Groups</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Member Dashboard</h3><ul class=""><li class="navListItem"><a class="navItem" href="/portal-docs/docs/dashboard/dbhome">Dashboard Home Page</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/dashboard/dbeditprofile">Dashboard Edit Profile Page</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/dashboard/dbevents">Dashboard Events Page</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/dashboard/dbgroups">Dashboard Groups Page</a></li><li class="navListItem"><a class="navItem" href="/portal-docs/docs/dashboard/dbworkshops">Dashboard Workshops Page</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">The Home Page</h1></header><article><div><span><p>Sample</p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/portal-docs/docs/auth/auth"><span class="arrow-prev">← </span><span>Authentication</span></a><a class="docs-next button" href="/portal-docs/docs/outer-pages/login"><span>Login Page</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/portal-docs/" class="nav-home"><img src="/portal-docs/img/icon.png" alt="DSGT Member Portal" width="66" height="58"/></a><div><h5>Docs</h5></div><div><h5>Community</h5><a href="/portal-docs/en/users.html">User Showcase</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/portal-docs/blog">Blog</a><a href="https://github.com/DataScience-GT/datascience-gt.github.io" target="_blank">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://opensource.facebook.com/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/portal-docs/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2020 Data Science @ GT</section></footer></div></body></html>
